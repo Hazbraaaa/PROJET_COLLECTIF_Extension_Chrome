@@ -1,0 +1,20 @@
+{
+    "name": "S.A.K",
+    "description": "Search And Keep : Keep track of what you have to do on website when you don't have the time to do it.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "./images/icon-128.png"
+    },
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}

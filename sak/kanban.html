@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAK - To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./kanban.css">
+    <script defer src="./scripts/kanban.js"></script>
+</head>
+
+<body>
+    <div class="filter-container">
+        <label for="theme-filter">Filtrer par thème :</label>
+        <select class="theme-filter">
+            <option value="leisure">Loisirs</option>
+            <option value="learning">Apprentissage</option>
+            <option value="purchase">Achat</option>
+            <option value="work">Travail</option>
+        </select>
+    </div>
+    <div class="kanban">
+        <div class="task-column">
+            <p class="status lightGreen">à faire</p>
+            <div class="task-container" id="to-do-container">
+            </div>
+        </div>
+        <div class="task-column">
+            <p class="status green">en cours</p>
+            <div class="task-container" id="in-progress-container">
+            </div>
+        </div>
+        <div class="task-column">
+            <p class="status darkGreen">terminé</p>
+            <div class="task-container" id="done-container">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
